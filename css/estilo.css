@@ -1,0 +1,62 @@
+
+/* Estilos para barra de navegación */
+.navbar {
+    background-color: #126dc2; /* Color de fondo */
+    padding: 10px; /* Relleno */
+    text-align: center; /* Alineación del texto */´
+}
+
+/* Estilos para enlaces de navegación */
+.nav-link {
+    color: #fff; /* Color del texto */
+    padding: 5px 10px; /* Relleno */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+/* Estilos para enlaces de navegación al pasar el mouse */
+.nav-link:hover {
+    background-color: #749eff; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para elementos de la barra de navegación */
+.nav-item {
+    display: inline-block; /* Colocar elementos en línea */
+    margin-right: 20px; /* Margen derecho entre elementos */
+}
+/* Estilos generales del cuerpo del documento */
+body {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: #f2f2f2; /* Color de fondo */
+    text-align: justify;/* Alineación del texto */
+}
+/* Estilos para pie de página */
+footer {
+    background-color: #126dc2; /* Color de fondo */
+    padding: 20px 0; /* Relleno */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+}
+/* Estilos para párrafos */
+p {
+    margin: 20px 20; /* Margen superior e inferior */
+    margin-right: 5%; /* Margen derecho entre elementos */
+    margin-left: 5% ;/* Margen izquierdo entre elementos */
+    color: #666; /* Color del texto */
+}
+
+h1 {
+    text-align: center; /* Centra el texto */
+}
+/* Estilos para el encabezado */
+.encabezado {
+    display: flex; /* Usa un modelo de caja flexible */
+    background-image: url(../img/encabezado.png); /* Establece la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    width: 100%; /* Establece el ancho al 100% del viewport */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 500%; /* Tamaño del texto */
+    color: rgb(0, 72, 255); /* Color del texto */
+}
