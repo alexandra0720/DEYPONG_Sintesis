@@ -73,7 +73,14 @@ h1 {
     align-items: center;
     margin-right: 5%; /* Margen derecho entre elementos */
 }
-
+.col4{
+    width: 30%;
+    text-align: justify;
+    align-content: space-around;
+    align-items: center;
+    margin-right: 10%; /* Margen derecho entre elementos */
+    margin-left: 10% ;/* Margen izquierdo entre elementos */
+}
 img {
     padding: 5px 250px; /* Relleno */
 }
@@ -89,17 +96,58 @@ ol, ul {
 li {
     margin-bottom: 20px;
 }
-.cta-button {
-    display: inline-block;
-    background-color: #ff4800;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    align-content: center;
+
+.boton {
+    background-color: #1268b9; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Espacio alrededor del botón */
+    cursor: pointer; /* Cambiar el cursor a un puntero cuando se pase el mouse por encima */
+    border: none; /* Eliminar borde predeterminado */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
 
 }
-.cta-button {
-    background-color: #ff0000; /* Color de fondo al pasar el mouse */
+.boton:hover {
+    background-color: #65b3fc; /* Color de fondo al pasar el mouse */
+}
+
+Claro, aquí tienes el código CSS con la media query al principio:
+
+```css
+/* Media Query para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 5px;
+    }
+    .nav-item {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .nav-link {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .encabezado {
+        font-size: 200%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col2, .col4 {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .boton {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0;
+    }
 }
