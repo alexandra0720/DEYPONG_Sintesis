@@ -12,40 +12,41 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container"> <!-- Contenedor principal -->
-        <header>
-            <nav class="navbar"> <!-- Menu de navegación -->
-                <li class="nav-item">
-                 <a class="nav-link" href="./es/ofrecer.html">¿Que ofrecemos?</a> <!-- Enlace a la página de educación -->
+    <header>
+        <div class="logo">
+            <h4>Desigualdad y Pobreza<Re/h4>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./es/ofrecer.html">¿Que ofrecemos?</a></li>
+                <li><a href="./es/informacion.html">Información</a></li>
+                <li><a href="./es/ayuda.html">Ayudas</a></li>
+                <li class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropbtn">Idiomas</label>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Catalá</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Deusk</a></li>
+                    </ul>
                 </li>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./es/ayuda.html">Ayuda a gente sin recursos</a> <!-- Enlace a la página de experiencia -->
-                </li>
-               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="./es/servicios.html">Servicio de proteccion por la desigualdad</a> <!-- Enlace a la página de experiencia -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./es/informacion.html">Información</a> <!-- Enlace a la página de informacion -->
-              </li>
-           </nav>
-           <div class="encabezado">Desigualdad y Pobreza</div>
-        </header>
-        <footer>  <!-- Pie de página con enlace -->
-            <nav class="navbar">
-                 <ul class="nav-links">
-                 <li class="nav-item">
-                    <a class="nav-link" href="./idiomas/catalan/index.html">Català</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./idiomas/ingles/index.html">English</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./idiomas/aleman/index.html">Deutsch</a>
-                </li>
-                 </ul>
-            </nav>
-        </footer>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Bienvenido a Desigualdad y Pobreza</h2>
+                <p>Nuestra misión es combatir la desigualdad y la pobreza en todas sus formas. Únete a nosotros para hacer una diferencia real en las vidas de quienes más lo necesitan.</p>
+                <img src="./img/encabezado.png" alt="Bienvenida">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2024 Desigualdad y Pobreza. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

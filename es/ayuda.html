@@ -11,50 +11,73 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar"> <!-- Menu de navegación -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../es/servicios.html">Servicio de proteccion por la desigualdad</a> <!-- Enlace a la página de experiencia -->
-            </li>
-           </li>
-           <li class="nav-item">
-            <a class="nav-link" href="../es/ofrecer.html">¿Que ofrecemos?</a> <!-- Enlace a la página de educación -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../es/informacion.html">Información</a> <!-- Enlace a la página de informacion -->
-          </li>
-       </nav>
-
-    </header>
-    <section>
-        <p>En nuestra organización estamos comprometidos en combatir la desigualdad y la pobreza en nuestra comunidad. Con tu ayuda, podemos marcar la diferencia en la vida de muchas personas.</p>
-        <p>¡Haz tu donación hoy y sé parte del cambio que queremos ver en el mundo!</p>
-    </section>
-    <section class="row">
-        <div class="col4"> <button class="boton">Haz clic aquí</button>
-          <h4>Donación mínima 3,95€</h4>
-
-        </div>
-    
-        <div class="col4"><button class="boton">Haz clic aquí</button>
-          <h4>Donación media 19,95€</h4>
-
-        </div>
-    
-        <div class="col4"> <button class="boton">Haz clic aquí</button>
-          <h4>Donación máxima 49.95€</h4>
-
-        </div>
-      </section>
-    <footer>  <!-- Pie de página con enlace -->
-        <nav class="navbar">
-             <ul class="nav-links">
-             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Volver al inicio</a>
-            </li>
-             </ul>
+  <header>
+    <div class="container">
+        <h1>Desigualdad y Pobreza</h1>
+        <br>
+        <nav>
+            <ul>
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./ofrecer.html">Qué Ofrecemos</a></li>
+                <li><a href="./informacion.html">Información</a></li>
+            </ul>
         </nav>
-    </footer>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+        <div class="container">
+            <h2>Ayudas</h2>
+            <p>Tus donaciones ayudan a continuar nuestra misión. Por favor, completa el siguiente formulario para hacer una donación.</p>
+            <p>La desigualdad y la pobreza son problemas profundos y arraigados que afectan a millones de personas en todo el mundo. Hacer una donación a una ONG dedicada a combatir estos problemas no solo contribuye a mejorar las condiciones de vida de los más necesitados, sino que también ayuda a construir una sociedad más justa y equitativa. </p>
+            <section class="row3"> <!-- Sección con cuatro columnas -->
+
+                <div class="col3"> <!-- Columna 1 -->
+                    <img src="../img/min.png" alt="1" width="50%"> <!-- Imagen con descripción -->
+                    <p>Donación Mínima: "Cada pequeña contribución cuenta. Con una donación mínima, puedes ayudar a proporcionar una comida caliente a quienes más lo necesitan."</p> <!-- Descripción -->
+                    <button class="btn btn-primary" type="submit">Donar</button>
+
+                </div>
+
+                <div class="col3"> <!-- Columna 2 -->
+                    <img src="../img/media.png" alt="2" width="50%"> <!-- Imagen con descripción -->
+                    <p>Donación Mínima: "Cada pequeña contribución cuenta. Con una donación mínima, puedes ayudar a proporcionar una comida caliente a quienes más lo necesitan."</p> <!-- Descripción -->
+                    <button class="btn btn-primary" type="submit">Donar</button>
+                </div>
+
+                <div class="col3"> <!-- Columna 3 -->
+                    <img src="../img/max.png" alt="3" width="50%"> <!-- Imagen con descripción -->
+                    <p>Donación Máxima: "Tu donación máxima puede transformar vidas, financiando proyectos sostenibles y de gran impacto que combaten la desigualdad y la pobreza a largo plazo."</p> <!-- Descripción -->
+                    <button class="btn btn-primary" type="submit">Donar</button>
+                </div>
+
+            </section>
+            
+            
+            <form action="#" method="POST" class="donation-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="amount">Monto de la Donación:</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <button type="submit">Donar</button>
+            </form>
+            <img src="images/ayudas.jpg" alt="Ayudas">
+        </div>
+        
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <p> 2024 Desigualdad y Pobreza. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
