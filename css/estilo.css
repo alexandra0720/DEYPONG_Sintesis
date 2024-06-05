@@ -11,13 +11,13 @@ body {
 header {
     background-color: rgb(71, 71, 255); /* Establece el color de fondo del encabezado en un tono de azul */
     padding: 10px 0; /* Agrega 10px de relleno arriba y abajo del encabezado */
-    color: black; /* Establece el color del texto dentro del encabezado a negro */
+    color: white; /* Establece el color del texto dentro del encabezado a negro */
     display: flex; /* Usa el modelo de caja flexible para el encabezado */
     justify-content: space-between; /* Distribuye el espacio entre los elementos hijos de manera uniforme */
     align-items: center; /* Alinea verticalmente los elementos hijos al centro */
 }
 .logo {
-    margin-left: 20px; /* Agrega un margen izquierdo de 20px al logotipo */
+    margin-left: 0%; /* Agrega un margen izquierdo de 20px al logotipo */
 }
 /* Estilos para la barra de navegación */
 .navbar ul {
@@ -31,7 +31,7 @@ header {
     margin: 0 15px; /* Agrega un margen horizontal de 15px a cada elemento de la lista */
 }
 .navbar ul li a, .dropbtn {
-    color: black; /* Establece el color del texto de los enlaces y el botón desplegable a negro */
+    color: white; /* Establece el color del texto de los enlaces y el botón desplegable a negro */
     font-weight: bold; /* Establece el texto en negrita */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     padding: 10px; /* Agrega un relleno de 10px alrededor de los enlaces y el botón desplegable */
@@ -45,7 +45,7 @@ header {
 .dropdown-content {
     display: none; /* Oculta el contenido del menú desplegable por defecto */
     position: absolute; /* Posiciona el menú desplegable de manera absoluta */
-    background-color: white; /* Establece el color de fondo del menú desplegable en blanco */
+    background-color: black; /* Establece el color de fondo del menú desplegable en blanco */
     min-width: 160px; /* Establece un ancho mínimo de 160px para el menú desplegable */
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Agrega una sombra al menú desplegable */
     z-index: 1; /* Establece la prioridad de apilamiento del menú desplegable */
@@ -118,7 +118,7 @@ main {
     border-bottom: 1px solid #ddd; /* Aplica un borde inferior gris claro */
 }
 /* Estilo de los títulos h2, con un color azul y un borde inferior */
-h2 {
+h1 {
     color: rgb(71, 71, 255); /* Color del texto azul */
     border-bottom: 2px solid rgb(71, 71, 255); /* Borde inferior azul */
     padding-bottom: 5px; /* Padding inferior de 5px */
@@ -130,6 +130,10 @@ footer {
     text-align: center; /* Texto centrado */
     padding: 10px 0; /* Padding superior e inferior de 10px */
     margin-top: 20px; /* Margen superior de 20px */
+}
+footer p {
+    color: white;
+    text-align: center;
 }
 /* Estilo del formulario de donación, usando flexbox en columna y centrado */
 .donation-form {
@@ -169,7 +173,7 @@ img {
     height: auto; /* Altura automática para mantener la proporción */
     margin-top: 20px; /* Margen superior de 20px */
     display: block; /* Display block para eliminar el espacio inferior */
-    margin: 20px auto; /* Márgenes superior e inferior de 20px, centrado horizontalmente */
+    margin: 5px auto; /* Márgenes superior e inferior de 20px, centrado horizontalmente */
     max-width: 100%; /* Ancho máximo del 100% del contenedor padre */
     height: auto; /* Altura automática para mantener la proporción */
 }
@@ -209,7 +213,14 @@ li {
     margin: 2px; /* Margen de 2px alrededor de cada columna */
     text-align: center; /* Texto centrado */
 }
+.logo img {
+    width: 20%;
+}
 /* Media Query para dispositivos con un ancho máximo de 600px */
-@media (max-width: 600px) {
-    
+@media screen and (max-width: 600px) {
+    .col2, .row, .col2 img, .col2 p, .row3, .col3 {
+        width: 90%;
+        flex-direction: column;
+    }
+
 }

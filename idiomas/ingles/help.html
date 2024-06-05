@@ -11,45 +11,67 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar"> <!-- Navigation Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="./services.html">Protection Service Against Inequality</a> <!-- Link to the experience page -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./offer.html">What Do We Offer?</a> <!-- Link to the education page -->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./information.html">Information</a> <!-- Link to the information page -->
-            </li>
-        </nav>
-    </header>
-    <section>
-        <p>In our organization, we are committed to combating inequality and poverty in our community. With your help, we can make a difference in the lives of many people.</p>
-        <p>Make your donation today and be part of the change we want to see in the world!</p>
-    </section>
-    <section class="row">
-        <div class="col4">
-            <button class="boton">Click Here</button>
-            <h4>Minimum Donation €3.95</h4>
-        </div>
-        <div class="col4">
-            <button class="boton">Click Here</button>
-            <h4>Average Donation €19.95</h4>
-        </div>
-        <div class="col4">
-            <button class="boton">Click Here</button>
-            <h4>Maximum Donation €49.95</h4>
-        </div>
-    </section>
-    <footer>  <!-- Footer with link -->
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Back to Home</a>
-                </li>
+  <header>
+    <div class="container">
+        <h1>Inequality and Poverty</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./offer.html">What We Offer</a></li>
+                <li><a href="./information.html">Information</a></li>
             </ul>
         </nav>
-    </footer>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+        <div class="container">
+            <h2>Help</h2>
+            <p>Your donations help continue our mission. Please fill out the form below to make a donation.</p>
+            <p>Inequality and poverty are deep-rooted problems that affect millions of people around the world. Donating to an NGO dedicated to combating these issues not only helps improve the living conditions of the most needy, but also helps build a more just and equitable society.</p>
+            <section class="row3"> <!-- Section with four columns -->
+
+                <div class="col3"> <!-- Column 1 -->
+                    <img src="../../img/min.png" alt="1" width="50%"> <!-- Image with description -->
+                    <p>Minimum Donation: "Every small contribution counts. With a minimum donation, you can help provide a hot meal to those who need it most."</p> <!-- Description -->
+                    <button class="btn btn-primary" type="submit">Donate</button>
+                </div>
+
+                <div class="col3"> <!-- Column 2 -->
+                    <img src="../../img/media.png" alt="2" width="50%"> <!-- Image with description -->
+                    <p>Minimum Donation: "Every small contribution counts. With a minimum donation, you can help provide a hot meal to those who need it most."</p> <!-- Description -->
+                    <button class="btn btn-primary" type="submit">Donate</button>
+                </div>
+
+                <div class="col3"> <!-- Column 3 -->
+                    <img src="../../img/max.png" alt="3" width="50%"> <!-- Image with description -->
+                    <p>Maximum Donation: "Your maximum donation can transform lives, funding sustainable and high-impact projects that combat inequality and poverty in the long term."</p> <!-- Description -->
+                    <button class="btn btn-primary" type="submit">Donate</button>
+                </div>
+
+            </section>
+            
+            <form action="#" method="POST" class="donation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <button type="submit">Donate</button>
+            </form>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <p>2024 Inequality and Poverty. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
