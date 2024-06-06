@@ -1,50 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESIGUALTAT I POBRESA</title>
     <link rel="stylesheet" href="../../css/estilo.css">
-    <link rel="icon" type="image/png" href="../../img/icono.png">
+    <link rel="icon" type="image/png" href="../../img/logodeypong.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container"> <!-- Contenidor principal -->
-        <header>
-            <nav class="navbar"> <!-- Menú de navegació -->
-                <li class="nav-item">
-                 <a class="nav-link" href="./oferir.html">Què oferim?</a> <!-- Enllaç a la pàgina d'educació -->
+    <header>
+        <div class="logo">
+            <img src="../../img/logo.png" alt="deypong" width="10%">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./oferir.html">Què oferim?</a></li>
+                <li><a href="./informacio.html">Informació</a></li>
+                <li><a href="./ajuda.html">Ajudes</a></li>
+                <li class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropbtn">Idiomes</label>
+                    <ul class="dropdown-content">
+                        <li><a href="../../index.html">Espanyol</a></li>
+                        <li><a href="../ingles/index.html">Àngles</a></li>
+                        <li><a href="../aleman/index.html">Alemany</a></li>
+                    </ul>
                 </li>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./ajuda.html">Ajuda a persones sense recursos</a> <!-- Enllaç a la pàgina d'experiència -->
-                </li>
-               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="./serveis.html">Servei de protecció per la desigualtat</a> <!-- Enllaç a la pàgina d'experiència -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./informacio.html">Informació</a> <!-- Enllaç a la pàgina d'informació -->
-              </li>
-           </nav>
-           <div class="encabezado">Desigualtat i Pobresa</div>
-        </header>
-        <footer>  <!-- Peu de pàgina amb enllaç -->
-            <nav class="navbar">
-                 <ul class="nav-links">
-                 <li class="nav-item">
-                    <a class="nav-link" href="../../index.html">Español</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../idiomas/ingles/index.html">Anglès</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../idiomas/aleman/index.html">Alemany</a>
-                </li>
-                 </ul>
-            </nav>
-        </footer>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Benvingut a Desigualtat i Pobresa</h1>
+                <p>La nostra missió és combatre la desigualtat i la pobresa en totes les seves formes. Uneix-te a nosaltres per fer una diferència real en les vides d'aquells que més ho necessiten.</p>
+                <img src="../../img/encabezado.png" alt="Benvinguda">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2024 Desigualtat i Pobresa. Tots els drets reservats.</p>
+        </div>
+    </footer>
 </body>
 </html>
